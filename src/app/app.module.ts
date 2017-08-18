@@ -9,6 +9,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { Error404Component } from './responses/error404/error404.component';
 import { AboutComponent } from './about/about.component';
 import { HttpExampleComponent } from './http-example/http-example.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { HttpExampleComponent } from './http-example/http-example.component';
     FooterComponent,
     Error404Component,
     AboutComponent,
-    HttpExampleComponent
+    HttpExampleComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

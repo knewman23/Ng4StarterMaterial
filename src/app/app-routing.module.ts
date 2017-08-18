@@ -1,18 +1,20 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { Error404Component } from './responses/error404/error404.component';
-import { AboutComponent } from './about/about.component';
-import { HttpExampleComponent } from './http-example/http-example.component';
+import {NgModule} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
+import {Error404Component} from './responses/error404/error404.component';
+import {AboutComponent} from './about/about.component';
+import {HttpExampleComponent} from './http-example/http-example.component';
+import {HomeComponent} from './home/home.component';
 
 const routes: Routes = [
-  { path: '', children: [] },
-  { path: 'about', component: AboutComponent },
-  { path: '**', component: Error404Component },
-  { path: 'http', component: HttpExampleComponent}
+    {path: 'home', component: HomeComponent},
+    {path: 'about', component: AboutComponent},
+    {path: 'http', component: HttpExampleComponent},
+    {path: '**', component: Error404Component}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

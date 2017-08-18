@@ -1,7 +1,18 @@
-<h2>Basic Request</h2>
+<section>
+    <div class="row">
+        <h2>Basic Request</h2>
+    </div>
 
-<button type="button" (click)="makeRequest()">Make Request</button>
+    <div class="row">
+        <button type="button" class="btn btn-primary" (click)="makeRequest()">Make Request</button>
+    </div>
+</section>
 
-<div *ngIf="loading">loading...</div>
+<br>
 
-<pre>{{data | json}}</pre>
+<div class="row">
+    <div *ngIf="loading">loading...</div>
+
+    <pre>{{data | json}}</pre>
+</div>
+
