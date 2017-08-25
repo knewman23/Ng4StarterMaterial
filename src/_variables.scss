@@ -1,8 +1,10 @@
-$icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
-$intel-font-path: "../node_modules/it-mlaf-sass/fonts/";
+//$icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+//$intel-font-path: "../node_modules/it-mlaf-sass/fonts/";
 
-@import "../node_modules/it-mlaf-sass/scss/intel-variables";
+//@import "../node_modules/it-mlaf-sass/scss/intel-variables";
+@import "../node_modules/roboto-fontface/css/roboto/roboto-fontface.css";
 
 $footer-height: 50px;
 $body-margin: 0 0 100px;
 $min-height: 100%;
+

@@ -9,12 +9,7 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico",
-        {
-            "glob": "intel-*.png",
-            "input": "../node_modules/it-mlaf-sass/images/",
-            "output": "./it-mlaf-sass/images/"
-        }
+        "favicon.ico"
       ],
       "index": "index.html",
       "main": "main.ts",

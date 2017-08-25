@@ -1,11 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'variables';
-@import '../node_modules/it-mlaf-sass/it-mlaf';
+@import '../node_modules/font-awesome/css/font-awesome.css';
+//@import "~@angular/material/prebuilt-themes/purple-green.css";
+@import "assets/theme";
+
 
 html {
-    font-family: $font-family-sans-serif !important;
+    font-family: "Roboto" !important;
     position: relative;
     height: auto;
+    font-weight: 200;
     min-height: $min-height;
 }
 
@@ -13,4 +17,38 @@ body {
     position: static;
     height: auto;
     margin: $body-margin; /* bottom = footer height */
+}
+
+
+@media (min-width: 1280px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+.container, .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container, .container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.white-link {
+    color: #fff;
+    text-decoration: none;
 }
